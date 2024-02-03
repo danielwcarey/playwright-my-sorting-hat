@@ -1,0 +1,19 @@
+{
+    "dependencies": {
+        "npm": "^10.4.0"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.41.2",
+        "@types/node": "^20.11.16"
+    },
+    "scripts": {
+        "start": "npx playwright codegen https://my-sorting-hat.netlify.app/",
+
+        "codegen": "npx playwright codegen",
+        "codegen:project": "npx playwright codegen https://my-sorting-hat.netlify.app/",
+        "test": "npx playwright test",
+        "test:ui": "npx playwright test --ui",
+        "report": "npx playwright show-report",
+        "install-playwright": "npx playwright install chromium firefox webkit"
+    }
+}
